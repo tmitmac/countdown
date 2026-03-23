@@ -43,13 +43,23 @@ body {
     </div>
   </div>
 
-    <!-- GTA VI -->
+    <!-- Election -->
   <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-6 shadow-lg">
-    <a href="gta.html" class="hover:underline text-xl font-semibold mb-2">GTA VI</a>
+    <a href="election.html" class="hover:underline text-xl font-semibold mb-2">2026 General Election</a>
     <p id="countdown3" class="text-sm mb-3 opacity-80"></p>
 
     <div class="w-full bg-white/20 rounded-full h-4 overflow-hidden">
-      <div id="bar3" class="bar bg-red-400 h-4 rounded-full w-0"></div>
+      <div id="bar3" class="bar bg-yellow-400 h-4 rounded-full w-0"></div>
+    </div>
+  </div>
+
+    <!-- GTA VI -->
+  <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-6 shadow-lg">
+    <a href="gta.html" class="hover:underline text-xl font-semibold mb-2">GTA VI</a>
+    <p id="countdown4" class="text-sm mb-3 opacity-80"></p>
+
+    <div class="w-full bg-white/20 rounded-full h-4 overflow-hidden">
+      <div id="bar4" class="bar bg-red-400 h-4 rounded-full w-0"></div>
     </div>
   </div>
 
@@ -108,12 +118,20 @@ setupCountdown(
   document.getElementById("bar2")
 );
 
+// General Election (started Jan 2026)
+setupCountdown(
+  "January 1, 2026 00:00:00",
+  "November 7, 2026 19:00:00",
+  document.getElementById("countdown3"),
+  document.getElementById("bar3")
+);
+
 // GTA VI (started Jan 2026)
 setupCountdown(
   "January 1, 2026 00:00:00",
   "November 19, 2026 00:00:00",
-  document.getElementById("countdown3"),
-  document.getElementById("bar3")
+  document.getElementById("countdown4"),
+  document.getElementById("bar4")
 );
 </script>
 
