@@ -23,7 +23,15 @@ body {
 
   <h1 class="text-3xl font-bold text-center">Countdown</h1>
 
+    <!-- One Last Question, Prime Minister -->
+  <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-6 shadow-lg">
+    <a href="book.html" class="hover:underline text-xl font-semibold mb-2">One Last Question, Prime Minister</a>
+    <p id="countdown6" class="text-sm mb-3 opacity-80"></p>
 
+    <div class="w-full bg-white/20 rounded-full h-4 overflow-hidden">
+      <div id="bar6" class="bar bg-orange-400 h-4 rounded-full w-0"></div>
+    </div>
+  </div>
   <!-- Singapore, United Kingdom, and Ireland -->
   <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-6 shadow-lg">
     <a href="uk.html" class="hover:underline text-xl font-semibold mb-2">Singapore, United Kingdom, and Ireland 🇸🇬🇬🇧🇮🇪</a>
@@ -135,6 +143,14 @@ setupCountdown(
   "December 25, 2026 00:00:00",
   document.getElementById("countdown5"),
   document.getElementById("bar5")
+);
+  
+// One Last Question, Prime Minster (started Apr 2026)
+setupCountdown(
+  "April 23, 2026 8:15:00",
+  "April 28, 2026 12:00:00",
+  document.getElementById("countdown6"),
+  document.getElementById("bar6")
 );
 </script>
 
