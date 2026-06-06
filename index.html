@@ -23,17 +23,6 @@ body {
 
   <h1 class="text-3xl font-bold text-center">Countdown</h1>
 
-    
-  <!-- Singapore, United Kingdom, and Ireland -->
-  <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-6 shadow-lg">
-    <a href="uk.html" class="hover:underline text-xl font-semibold mb-2">Singapore, United Kingdom, and Ireland 🇸🇬🇬🇧🇮🇪</a>
-    <p id="countdown2" class="text-sm mb-3 opacity-80"></p>
-
-    <div class="w-full bg-white/20 rounded-full h-4 overflow-hidden">
-      <div id="bar2" class="bar bg-blue-400 h-4 rounded-full w-0"></div>
-    </div>
-  </div>
-
     <!-- Budget Day -->
   <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-6 shadow-lg">
     <a href="budget.html" class="hover:underline text-xl font-semibold mb-2">Budget Day 2026</a>
@@ -114,14 +103,6 @@ function setupCountdown(startDateStr, targetDateStr, countdownEl, barEl) {
   update();
   setInterval(update, 1000 * 60);
 }
-
-// United Kingdom (started Jan 2026)
-setupCountdown(
-  "January 2, 2026 00:00:00",
-  "May 23, 2026 07:10:00",
-  document.getElementById("countdown2"),
-  document.getElementById("bar2")
-);
 
 // Budget Day (started Jan 2026)
 setupCountdown(
