@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Budget Day Countdown</title>
+<title>Official Election Results Countdown</title>
 
 <script src="https://cdn.tailwindcss.com"></script>
 
@@ -26,8 +26,8 @@ body {
 
   <!-- Title -->
   <div class="text-center space-y-2">
-    <h1 class="text-4xl font-bold">Budget 2026</h1>
-    <p class="opacity-70">Countdown to Budget Day 2026</p>
+    <h1 class="text-4xl font-bold">Official 2026 Election Results</h1>
+    <p class="opacity-70">Countdown to the Relese of the Official 2026 Election Results</p>
   </div>
 
   <!-- Countdown -->
@@ -37,7 +37,7 @@ body {
 
     <!-- Progress Bar -->
     <div class="w-full bg-white/20 rounded-full h-6 mt-6 overflow-hidden">
-      <div id="bar" class="bar bg-cyan-400 h-6 rounded-full w-0"></div>
+      <div id="bar" class="bar bg-orange-400 h-6 rounded-full w-0"></div>
     </div>
   </div>
 
@@ -45,20 +45,20 @@ body {
   <div class="grid grid-cols-2 gap-4 text-center">
     <div class="bg-white/10 p-4 rounded-xl">
       <p class="text-sm opacity-70">Start Date</p>
-      <p class="font-semibold">May 22, 2025</p>
+      <p class="font-semibold">November 7, 2026</p>
     </div>
 
     <div class="bg-white/10 p-4 rounded-xl">
-      <p class="text-sm opacity-70">Departure</p>
-      <p class="font-semibold">May 28, 2026</p>
+      <p class="text-sm opacity-70">End Date</p>
+      <p class="font-semibold">November 27, 2026</p>
     </div>
   </div>
 
 </div>
 
 <script>
-const start = new Date("May 22, 2025 00:00:00");
-const end = new Date("May 28, 2026 14:00:00");
+const start = new Date("November 8, 2026 00:00:00");
+const end = new Date("November 27, 2026 12:00:00");
 
 function update() {
   const now = new Date();
@@ -72,7 +72,7 @@ function update() {
   const bar = document.getElementById("bar");
 
   if (remaining <= 0) {
-    countdownEl.innerText = "🎉 You're on your trip!";
+    countdownEl.innerText = "The Votes Are In";
     percentEl.innerText = "100% complete";
     bar.style.width = "100%";
     return;
